@@ -36,3 +36,6 @@ How to build PlatformIO based project
 
     # Clean build files
     > platformio run --target clean
+
+For debugging chinese STM32 clone:
+* you need to change the CPUTAPID from 0x1ba01477 to 0x2ba01477 in the file with path: "~/.platformio/packages/tool-openocd/scripts/target/stm32f1x.cfg"
